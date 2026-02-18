@@ -33,6 +33,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         Vendedor
         <input type="text" name="seller" required>
         <br><br>
+    </form>
         <input type="submit" value="Ingresar">
         <a href="Principal.php">
             <button>Salir</button>

@@ -16,7 +16,7 @@ $NewTable = "SELECT * FROM cliente WHERE IdCliente = $NewID";
 $Newdatos = mysqli_query($connetion, $NewTable);
 
 }
-
+//////////  CLIENT4//////////
 ?>
 
 <!DOCTYPE html>
