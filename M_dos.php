@@ -1,7 +1,5 @@
 <?php
 
-use Dom\Mysql;
-
 $conectio = mysqli_connect("localhost", "root", "", "ferre2");
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
@@ -25,24 +23,31 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<form method="POST">
+<body>
+    <div class= "container mt-5">
+    <div class="col-md-4">
+    <form method="POST">
+        <h2 class="mb-4">PRODUCTO</h2>
     Nombre Producto
-    <input type="text" name="name" required>
+    <input type="text" name="name"  class="form-control"  required>
     <br><br>
     Precio
-    <input type="number" name="prise" required>
+    <input type="number" name="prise" class="form-control" required>
     <br><br>
     Cantidad
-    <input type="number" name="amount" required>
+    <input type="number" name="amount" class="form-control" required>
     <br><br>
-    <input type="submit" value="Ingresar">
-    <br><br>
-</form>
-<body>
-    <a href="Principal.php">
-        <button>volver</button>
+    <input type="submit" class="btn btn-primary" value="Ingresar">
+     <a href="Principal.php" class="btn btn-secondary">
+        Volver
     </a>
+</form>
+    </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </body>
 </html>
 

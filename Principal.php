@@ -6,18 +6,18 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-light">
 
-<div class="container vh-100 d-flex justify-content-center align-items-center">
-    <div class="card shadow p-4 text-center" style="width: 350px;">
-        
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+
+    <div class="card shadow p-4 text-center col-md-4">
+
         <h3 class="mb-4">Sistema Ferretería</h3>
 
-        <a href="M_uno.php" class="btn btn-primary mb-3 w-100">
+        <a href="M_uno.php" class="btn btn-primary w-100 mb-3">
             Cliente
         </a>
 
-        <a href="M_dos.php" class="btn btn-success mb-3 w-100">
+        <a href="M_dos.php" class="btn btn-success w-100 mb-3">
             Producto
         </a>
 
@@ -26,8 +26,7 @@
         </a>
 
     </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
