@@ -13,11 +13,11 @@
     <br><br>
 
     <a href="M_dos.php">
-        <button>Venta</button>
+        <button>Producto</button>
     </a>
     <br><br>
     <a href="M_tres.php">
-        <button>Modulo tres</button>
+        <button>Venta</button>
     </a>
 </body>
 </html>

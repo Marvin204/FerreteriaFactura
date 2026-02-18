@@ -4,8 +4,8 @@ use Dom\Mysql;
 
 $conectio = mysqli_connect("localhost", "root", "", "ferre2");
 
-if($_SERVER['REQUEST_METHOD'] !== "POST"){
-    $nombre = ($_POST['$nane']);
+if($_SERVER['REQUEST_METHOD'] == "POST"){
+    $nombre = ($_POST['name']);
     $precio = ($_POST['prise']);
     $cantidad = ($_POST['amount']);
 
@@ -15,10 +15,8 @@ if($_SERVER['REQUEST_METHOD'] !== "POST"){
     $NewID = mysqli_insert_id($conectio);
     $sqlSelect = "SELECT * FROM producto Where Idproducto = $NewID";
     $NewTable = mysqli_query($conectio, $sqlSelect);
-
-
 }
-
+/////////// PRODUCTO //////////
 ?>
 
 
@@ -29,9 +27,17 @@ if($_SERVER['REQUEST_METHOD'] !== "POST"){
     <title>Document</title>
 </head>
 <form method="POST">
-    NombreProducto
-
-
+    Nombre Producto
+    <input type="text" name="name" required>
+    <br><br>
+    Precio
+    <input type="number" name="prise" required>
+    <br><br>
+    Cantidad
+    <input type="number" name="amount" required>
+    <br><br>
+    <input type="submit" value="Ingresar">
+    <br><br>
 </form>
 <body>
     <a href="Principal.php">
@@ -45,6 +51,8 @@ if($_SERVER['REQUEST_METHOD'] !== "POST"){
 if(isset($NewTable) && $NewTable){
     while($fila = mysqli_fetch_assoc($NewTable)){
         echo $fila ['Nombre']. "<br>";
+        echo $fila ['Precio']. "<br>";
+        echo $fila ['Stock'] . "<br>";
     }
 }
 

@@ -43,7 +43,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 if(isset($Newdatos) && $Newdatos){
     while($fila = mysqli_fetch_assoc($Newdatos)){
         echo $fila ['Fecha']. "<br>";
-        echo $fila ['vndedor']. "<br>";
+        echo $fila ['Vendedor']. "<br>";
     }
 }   
 ?>
